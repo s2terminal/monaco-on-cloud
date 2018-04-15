@@ -10,3 +10,9 @@ require(['vs/editor/editor.main'], function() {
     language: 'javascript'
   });
 });
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+    console.log('ServiceWorker registration successful');
+  });
+}
