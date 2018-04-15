@@ -6,6 +6,7 @@ require(['vs/editor/editor.main'], function() {
       '\tconsole.log("Hello world!");',
       '}'
     ].join('\n'),
+    theme: 'vs-dark',
     language: 'javascript'
   });
 });
