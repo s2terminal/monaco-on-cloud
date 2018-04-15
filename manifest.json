@@ -2,15 +2,15 @@
   "short_name": "Monaco",
   "name": "Monaco Editor on Cloud",
   "theme_color": "#1e1e1e",
-  "background_color": "#1e1e1e",
+  "background_color": "#ffffff",
   "display": "minimal-ui",
   "icons": [{
     "src": "images/logo.png",
     "type": "image/png",
     "sizes": "400x400"
   },{
-    "src": "images/logo.png",
-    "type": "image/png",
+    "src": "images/logo-512.jpg",
+    "type": "image/jpeg",
     "sizes": "512x512"
   }],
   "start_url": "index.html"
