@@ -1,8 +1,7 @@
-html{
+html,body{
   height: 100%;
 }
 body{
-  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #1e1e1e;
@@ -12,9 +11,10 @@ a{
   color: #d4d4d4;
 }
 #container{
-  width:100%;
-  position: relative;
-  height: auto;
+  display: grid;
+  grid-template-rows: 2rem 1fr 2rem;
   min-height: 100%;
+}
+#editor{
   border:1px solid grey;
 }
