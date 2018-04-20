@@ -38,7 +38,5 @@ require(['vs/editor/editor.main'], function() {
 });
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-    console.log('ServiceWorker registration successful');
-  });
+  navigator.serviceWorker.register('/service-worker.js');
 }
