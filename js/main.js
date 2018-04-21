@@ -33,6 +33,10 @@ require(['vs/editor/editor.main'], function() {
   editor.onDidChangeModelContent(function(e) {
     document.getElementById("save").disabled = false;
   });
+  document.getElementById("language").addEventListener("change", function(e) {
+    monaco.editor.setModelLanguage(editor.getModel(), document.getElementById("language").value);
+  });
+
 
   function save() {
     localStorage.setItem(storageKey, editor.getValue());
