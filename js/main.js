@@ -6,6 +6,16 @@ require(['vs/editor/editor.main'], function() {
     theme: 'vs-dark',
     language: 'javascript'
   });
+  if (editor.getValue() == "") {
+    editor.setValue(
+    [
+      'function main() {',
+      '  console.log("Hello world!");',
+      '}',
+      ''
+    ].join('\n'));
+  }
+
   document.getElementById("save").disabled = true;
   document.getElementById("save").onclick = function() {
     save();
