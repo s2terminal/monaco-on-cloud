@@ -12,13 +12,16 @@
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   <script src="node_modules/monaco-editor/min/vs/loader.js"></script>
   <script src="js/main.js"></script>
+  <link rel="stylesheet" href="node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
+  <link rel="stylesheet" href="node_modules/office-ui-fabric-js/dist/css/fabric.components.min.css" />
+  <script src="node_modules/office-ui-fabric-js/dist/js/fabric.min.js"></script>
 </head>
 <body>
 
   <div id="container">
     <header>
-      <button id="save">save</button>
-      <button id="load">load</button>
+      <button id="save" class="ms-Button ms-Button--primary"><span class="ms-Button-label">Save</span></button>
+      <button id="load" class="ms-Button ms-Button--primary"><span class="ms-Button-label">Load</span></button>
     </header>
     <div id="editor"></div>
     <footer>
